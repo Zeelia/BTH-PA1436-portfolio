@@ -3,7 +3,7 @@ Title: Hem
 Description: Startsidan för min fina portfolio.
 ---
 
-Kevin Erazos portfolio
+<i class="fas fa-briefcase" aria-hidden="true"></i> Kevin Erazos portfolio
 ==========================
 
 Välkommen till min portfolio! 
