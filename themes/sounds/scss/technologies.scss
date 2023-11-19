@@ -1,0 +1,89 @@
+/* layout for all the technologies */
+.box-css {
+    grid-column: span 1;
+}
+
+.box-html {
+    grid-column: span 2;
+}
+
+.box-javascript {
+    grid-column: span 2;
+}
+
+.box-php {
+    grid-column: span 1;
+}
+
+.box-python {
+    grid-column: span 3;
+}
+
+.box-git {
+    grid-column: span 1;
+}
+
+.box-sqlite {
+    grid-column: span 2;
+}
+
+.landingpage {
+    display: grid;
+    gap: 1em 1em;
+    grid-template-columns: 300px auto;
+    /*grid-template-rows: 200px 600px 200px;*/
+
+    .box {
+        background-color: rgba(255, 255, 255, 0.90);
+        padding: 1em;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    }
+
+    .box:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+        cursor: pointer;
+        transition: 150ms;
+    }
+}
+
+.landingpage h1 {
+    grid-column: span 3;
+    justify-self: center;
+}
+
+.technology-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .technology-sidebar {
+        flex: 0 0 200px;
+        padding: 1em;
+        border-right: 1px solid #333;
+    }
+
+    .main-article {
+        flex: 1;
+        margin: 0 2em;
+    }
+
+    .main-article > h1 {
+        margin-top: 0;
+    }
+}
+
+/* media query for mobile */
+@media (max-width: 767px) {
+    .box {
+        grid-column: span 3 !important;
+    }
+
+    .technology-wrapper > .technology-sidebar {
+        display: none;
+    }
+
+    .technology-wrapper > .main-article > h1 {
+        margin-top: 0.67em;
+    }
+}
