@@ -7,9 +7,16 @@
     "example": "example"
   },
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
-    "style": "sass sounds/scss/style.scss sounds/css/style.css --no-source-map",
-    "style-min": "sass kmom02/scss/style.scss kmom02/css/style.min.css --no-source-map --style compressed"
+    "watch": "sass sounds/scss/style.scss:sounds/css/style.css sounds/scss/style-dark.scss:sounds/css/style-dark.css --no-source-map --watch",
+    "watch-min": "sass sounds/scss/style.scss:sounds/css/style.min.css sounds/scss/style-dark.scss:sounds/css/style-dark.min.css --no-source-map --watch --style compressed",
+    "style": "npm run style-light && npm run style-dark",
+    "style-min": "npm run style-light-min && npm run style-dark-min",
+    "style-dark": "sass sounds/scss/style-dark.scss sounds/css/style-dark.css --no-source-map",
+    "style-dark-min": "sass sounds/scss/style-dark.scss sounds/css/style-dark.min.css --no-source-map --style compressed",
+    "style-light": "sass sounds/scss/style.scss sounds/css/style.css --no-source-map",
+    "style-light-min": "sass sounds/scss/style.scss sounds/css/style.min.css --no-source-map --style compressed"
   },
   "author": "",
   "license": "ISC",

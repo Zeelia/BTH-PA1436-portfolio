@@ -1,5 +1,13 @@
-$font-color: #000;
-$font-alternative-color: #fff;
-$accent-color: #ee6c4d;
-$background-color: #3d5a80;
-$background-alternative-color: #e0fbfc;
+/* Monochromatic Blue */
+$mono-lightest: #00E1FA;
+$mono-ligher: #28B7C7;
+$mono-medium: #3B8B94;
+$mono-darker: #3A5D61;
+$mono-darkest: #293233;
+
+$font-color: $mono-darker;
+$font-alternative-color: $mono-lightest;
+$link-color: $mono-darker;
+$main-background: rgba(255, 255, 255, 0.90);
+
+$technology-box-background: rgba(255, 255, 255, 0.90);

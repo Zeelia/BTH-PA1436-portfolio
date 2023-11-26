@@ -308,6 +308,7 @@ template {
   display: none;
 }
 
+/* Monochromatic Blue */
 blockquote {
   font-style: italic;
   margin-left: 1em;
@@ -6546,7 +6547,10 @@ readers do not read off random characters that represent icons */
   padding: 0;
   font-family: "Raleway", sans-serif;
   line-height: 1.4;
-  color: #333;
+}
+
+a {
+  color: #3A5D61;
 }
 
 ol, ul {
@@ -6633,7 +6637,7 @@ body {
   }
 }
 .title * {
-  color: #111;
+  color: #3A5D61;
 }
 
 .title p {
@@ -6645,11 +6649,20 @@ body {
   display: flex;
   justify-content: space-between;
   border-top: 0 solid #222;
-  color: #eee;
+  color: #00E1FA;
+  padding: 0 2em;
+}
+
+.footer > div:first-child {
+  /*vertically align in parent*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer a {
-  color: #222;
+  color: #00E1FA;
+  text-decoration: none;
 }
 
 .footer .social {
@@ -6660,7 +6673,7 @@ body {
 body {
   font-family: sans-serif;
   line-height: 1.5rem;
-  color: #444;
+  color: #3A5D61;
 }
 
 p, td, th, li, dd {
@@ -6670,13 +6683,36 @@ p, td, th, li, dd {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 0.6em;
+  margin: 0.6em 0;
   font-weight: bold;
   font-family: "Lato", sans-serif;
 }
 
+div > h1:first-of-type, div > h2:first-of-type {
+  margin-top: 0;
+}
+
 img {
   max-width: 100%;
+}
+
+.palette-tooltip {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+td:hover .palette-tooltip {
+  visibility: visible;
+  opacity: 1;
 }
 
 .slide {
@@ -6693,10 +6729,6 @@ img {
 
 .nav ul li {
   padding: 0 1em;
-}
-
-.nav a, .nav-toggle {
-  color: #333;
 }
 
 .nav-toggle {
