@@ -6716,6 +6716,10 @@ td:hover .palette-tooltip {
   opacity: 1;
 }
 
+code {
+  background: #333;
+}
+
 .slide {
   overflow-y: hidden !important;
   transition: height 0.5s ease-in !important;

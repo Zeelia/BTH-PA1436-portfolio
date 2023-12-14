@@ -61,7 +61,7 @@ __Blondinbella__<br />
 Typsnitt för rubriker är Raleway, länkar Lato och brödtext Trebuchet MS.
 Standardfärgen för text, länkar, ikoner är en väldigt mörk grå, #2e2f30.
 Bakgrunden är helt vit, #ffffff.
-Länkar och ikoner är svarta till en början, men den beiga accentfärgen visas i vissa länkar vid <code>:hover.</code><br />
+Länkar och ikoner är svarta till en början, men den beiga accentfärgen visas i vissa länkar vid <code>:hover</code>.<br />
 <br />
 
 __Zeinas Kitchen__<br />
@@ -75,7 +75,7 @@ __Zeinas Kitchen__<br />
 </table>
 <br />
 Handskriven text i header-bannern. Typsnitt för rubriker är Playfair Display (med serifer), och länkar och brödtext är Nunito Sans (utan serifer).
-Standardfärgen för text är ren svart, länkar är antingen svarta med grön accentfärg, eller helt gröna. Bakgrunden är helt vit, #ffffff. Länkade rubriker är svarta till en början, men den gröna accentfärgen fade:as långsimt in vid <code>:hover.</code><br />
+Standardfärgen för text är ren svart, länkar är antingen svarta med grön accentfärg, eller helt gröna. Bakgrunden är helt vit, #ffffff. Länkade rubriker är svarta till en början, men den gröna accentfärgen fade:as långsimt in vid <code>:hover</code>.<br />
 <br />
 
 __Jardenberg__<br />
