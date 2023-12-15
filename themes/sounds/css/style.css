@@ -6715,6 +6715,12 @@ td:hover .palette-tooltip {
   opacity: 1;
 }
 
+.iframe-google-sheets {
+  width: 100%;
+  height: 300px;
+  border: 0 none;
+}
+
 .slide {
   overflow-y: hidden !important;
   transition: height 0.5s ease-in !important;

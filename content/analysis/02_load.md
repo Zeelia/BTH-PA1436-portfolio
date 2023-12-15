@@ -35,7 +35,7 @@ Jag valde denna blogg då det är en av Sveriges största matbloggar, men också
     </td>
     <td>
 <b><a href="https://jardenberg.se/">Joakim Jardenbergs personliga hemsida och blogg "Jardenberg"</b></a><br />
-Sist men inte minst valde jag denna blogg då även den är i en distinkt genre från de tidigare två bloggarna, men också för att Joakim Jardenberg är en internetprofil som ofta uttalar sig om ny teknik, inte minst genom sin blogg "#ensakidag", och jag anser därför att han bör ha en mer föruttänkt idé om designspråket på sin hemsida. 
+Sist men inte minst valde jag denna blogg då även den är i en distinkt genre från de tidigare två bloggarna, men också för att Joakim Jardenberg är en internetprofil som ofta uttalar sig om ny teknik, inte minst genom sin blogg "#ensakidag", och jag anser därför att han bör ha en mer kvalificerad idé om designen på sin hemsida. 
     </td>
 </tr>
 </table>
@@ -43,22 +43,27 @@ Sist men inte minst valde jag denna blogg då även den är i en distinkt genre 
 Metod
 -----------------------
 
-Eftersom denna analys kommer undersöka laddningstiden och användbarheten i hemsidornas design, har jag valt att använda verktyget "PageSpeed Insights", eftersom det är ett verktyg som mäter många olika typer av värden och villkor av hemsidans prestanda. Dessa resultat anser jag är väldigt användbara för att förbättra hemsidors laddningstid och användbarhet. Om man bara tittar på PageSpeed Insights resultat kan vi enkelt jämföra de tre hemsidornas prestanda. I resultatet nedan kommer jag förutsätta att god kod används (i enlighet med <a href="https://developer.chrome.com/docs/lighthouse/performance/performance-scoring">"Lighthouse performance scoring"</a> av Google, som PageSpeed Insights refererar till), och lista problemen jag stött på. 
+Eftersom denna analys kommer undersöka laddningstiden och användbarheten i hemsidornas design, har jag valt att använda verktyget "PageSpeed Insights", eftersom det är ett verktyg som mäter många olika typer av värden och villkor av hemsidans prestanda. Dessa resultat anser jag är väldigt användbara för att förbättra hemsidors laddningstid och användbarhet. Om man bara tittar på PageSpeed Insights resultat kan vi enkelt jämföra de tre hemsidornas prestanda. I resultatet nedan kommer jag utgå från att god kod används (i enlighet med <a href="https://developer.chrome.com/docs/lighthouse/performance/performance-scoring">"Lighthouse performance scoring"</a> av Google, som PageSpeed Insights refererar till), och endast lista nackdelarna jag stött på. Jag kommer dessutom även använda Developer Tools som är inbyggt i Safari på macOS för att mäta laddningstid, resursmängd, och storlek på hemsidorna. 
 
 Resultat
 -----------------------
 
+Samlat resultat från Developer Tools i macOS Safari:
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_Ry2BYTom2MaaewvIjznvFOVFgPLLUHt5XL7hVtrex7WJjyjsAhan-4Qup37t0MMbx6H7l6gwM-Ep/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" class="iframe-google-sheets"></iframe>
+<br />
+Samlat resultat från Google PageSpeed Insights:
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_Ry2BYTom2MaaewvIjznvFOVFgPLLUHt5XL7hVtrex7WJjyjsAhan-4Qup37t0MMbx6H7l6gwM-Ep/pubhtml?gid=309158755&amp;single=true&amp;widget=true&amp;headers=false" class="iframe-google-sheets"></iframe>
+<br />
 __Blondinbella__<br />
 
-<img src="../image/blogg-blondinbella-psi.png" alt="PageSpeed Insights resultat på Blondinbella" />(figur 1)<br />
 <br />
-Performance: 15. Lång laddningstid som beror på stora javascript-filer, oanvänd CSS, bilder som laddas in direkt (istället för endast när de är synliga) och föråldrad javascript för äldre webbläsare.<br />
+Lång laddningstid som beror på stora javascript-filer, oanvänd CSS, bilder som laddas in direkt (istället för endast när de är synliga) och föråldrad javascript för äldre webbläsare.<br />
 <br />
-Accessibility: 74. Meta-taggen innehåller <code>user-scalable=no</code> och <code>maximum-scale=1</code> är mindre än gränsvärdet 5. Det finns även enstaka element som har dålig kontrastratio (vit text på en ljus-rosa bakgrund), och det saknas attribut för screen readers så som titlar på iframes, labels för formulär, och alt för länkar.<br />
+Meta-taggen innehåller <code>user-scalable=no</code> och <code>maximum-scale=1</code> är mindre än gränsvärdet 5. Det finns även enstaka element som har dålig kontrastratio (vit text på en ljus-rosa bakgrund), och det saknas attribut för screen readers så som titlar på iframes, labels för formulär, och alt för länkar.<br />
 <br />
-Best practices: 91. <code>unload</code>-eventet har använts som inte alltid fungerar och kan förhindra webbläsaroptimisering. Det finns många errors i konsollen från webbläsaren gällande saknade resurser (filer som Blondinbella länkade till som inte finns kvar längre). Och det saknas source map-filer för minifierade javascript-filer.<br />
+<code>unload</code>-eventet har använts som inte alltid fungerar och kan förhindra webbläsaroptimisering. Det finns många errors i konsollen från webbläsaren gällande saknade resurser (filer som Blondinbella länkade till som inte finns kvar längre). Och det saknas source map-filer för minifierade javascript-filer.<br />
 <br />
-SEO: 91. Det finns en länk som inte innehåller något href-attribut, vilket gör att vissa robots inte kan "crawl":a genom länken.
+Det finns en länk som inte innehåller något href-attribut, vilket gör att vissa robots inte kan "crawl":a genom länken.
 <br />
 <br />
 
@@ -74,7 +79,7 @@ __Jardenberg__<br />
 <br />
 Typsnittet är detsamma för all text på hemsidan, men det typsnitt som används varierar beroende på vad som finns tillgängligt, i denna följd: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol".
 Typsnittet för logotypen är okänt då logotypen är en bild, men den innehåller tajt text utan serifer. 
-Akromatiskt färgschema med vitt, svart och varierande gråa toner.<br />
+Akromatiskt färgschema med vitt, svart och varierande gråa toner.<br /> 
 
 Analys
 -----------------------
