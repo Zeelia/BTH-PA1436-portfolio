@@ -1,0 +1,38 @@
+{% 
+    set myImages = [ "winter.jpg", 
+                    "ocean.jpg", 
+                    "meadow.jpg"] 
+%}
+
+{% include 'incl/header.twig' %}
+
+<body>
+    {% include 'incl/nav.twig' %}
+
+    <div class="main" role="main">
+
+        <h1><i class="fas fa-camera" aria-hidden="true"></i> {{ current_page.title }}</h1>
+
+        <div class="gallery-grid">
+            {% for image in myImages %}
+                <div class="gallery-grid-image">
+                    <a target="_blank" href="{{ base_url }}/image/gallery/{{ image }}">
+                        <picture>
+                            <source media="(min-width: 668px)" srcset="{{ base_url }}/image/gallery/{{ image }}?w=900&q=50">
+                            <source media="(min-width: 376px)" srcset="{{ base_url }}/image/gallery/{{ image }}?w=600&q=50">
+                            <img src="{{ base_url }}/image/gallery/{{ image }}?q=50&w=1200" alt="{{ image }}" />
+                        </picture>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+        
+        {{ content }}
+    </div>
+    
+    {% include 'incl/footer.twig' %}
+<div class="overlay-gradient">
+</div>
+</body>
+
+</html>
