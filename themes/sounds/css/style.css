@@ -6550,7 +6550,10 @@ readers do not read off random characters that represent icons */
 }
 
 a {
-  color: #3A5D61;
+  color: #28B7C7;
+}
+a:hover {
+  color: #00E1FA;
 }
 
 ol, ul {
@@ -6686,6 +6689,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0.6em 0;
   font-weight: bold;
   font-family: "Lato", sans-serif;
+  color: #3B8B94;
 }
 
 div > h1:first-of-type, div > h2:first-of-type {
